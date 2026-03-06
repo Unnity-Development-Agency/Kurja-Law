@@ -86,7 +86,7 @@ export default function HeroSlider() {
       <section className="relative">
         {desOpen && (
           <div
-            className={`disclaimer-box${visible ? " open" : ""} absolute max-w-7xl w-full left-1/2 -translate-x-1/2 top-4 bg-white p-8 rounded-lg shadow-2xl text-gray-950 z-40`}
+            className={`disclaimer-box${visible ? " open" : ""} absolute max-w-7xl w-full left-1/2 -translate-x-1/2 top-4 bg-white p-8 rounded-lg shadow-2xl text-gray-950 z-20`}
           >
             <h2 className="disclaimer-child text-2xl font-semibold mb-4 text-center">
               Disclaimer
