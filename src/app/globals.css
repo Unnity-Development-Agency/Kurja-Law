@@ -170,3 +170,9 @@ body {
   stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
   transition: stroke-dashoffset 0.3s linear;
 }
+
+/* globals.css */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #8b6d38 #f5f0e8;
+}

@@ -4,6 +4,7 @@ import Button from "./Button";
 import { MdOutlineAddIcCall, MdOutlineMail } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BsLinkedin, BsInstagram } from "react-icons/bs";
+import Link from "next/link";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +12,28 @@ const Header = () => {
   const [headerHeight, setHeaderHeight] = useState(0);
   const headerRef = useRef(null);
 
-  const navItems = ["Home", "About Us", "Expertise", "Blog"];
+  const navItems = [
+    {
+      id: 1,
+      title: "Home",
+      href: "/",
+    },
+    {
+      id: 2,
+      title: "About Us",
+      href: "/about",
+    },
+    {
+      id: 3,
+      title: "Expertise",
+      href: "/expertise",
+    },
+    {
+      id: 4,
+      title: "Blog",
+      href: "/blog",
+    },
+  ];
 
   useEffect(() => {
     if (headerRef.current) {
@@ -27,12 +49,10 @@ const Header = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Jab menu band ho tab overflow-x hidden rakho
-  // Jab menu khule tab overflow hidden hatao taaki slide animation dikhe
   useEffect(() => {
     if (menuOpen) {
       document.body.style.overflowX = "visible";
-      document.body.style.overflowY = "hidden"; // scroll band jab menu open
+      document.body.style.overflowY = "hidden";
     } else {
       document.body.style.overflowX = "hidden";
       document.body.style.overflowY = "auto";
@@ -53,10 +73,10 @@ const Header = () => {
 
       <div
         ref={headerRef}
-        className={`w-full bg-[#F1DDBF] z-50 transition-all duration-500
+        className={`w-full bg-[#F1DDBF] z-50 transition-all duration-500 
           ${
             isSticky
-              ? "fixed top-0 left-0 shadow-[0_4px_20px_rgba(0,0,0,0.10)]"
+              ? "fixed top-0 left-0 shadow-[0_4px_20px_rgba(0,0,0,0.10)] border-b border-[#8765397a]"
               : "relative"
           }`}
         style={{
@@ -75,7 +95,7 @@ const Header = () => {
           }`}
         />
 
-        {/* Mobile Menu — fixed, bahar se aata hai, overflow se independent */}
+        {/* Mobile Menu — fixed,*/}
         <div
           className={`fixed top-0 right-0 h-screen w-[75%] max-w-[320px] bg-[#F1DDBF] z-[60] shadow-[-8px_0_30px_rgba(0,0,0,0.1)]
           flex flex-col px-8 pt-10 pb-10 transition-transform duration-500 ${
@@ -92,15 +112,16 @@ const Header = () => {
           {/* Nav Links */}
           <div className="flex flex-col">
             {navItems.map((item, i) => (
-              <a
-                key={item}
+              <Link
+                href={item.href}
+                key={item.id}
                 className={`text-[0.9rem] font-bold text-black py-3 border-b border-black/10
                 transform transition-all duration-500
                 ${menuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-6"}`}
                 style={{ transitionDelay: `${i * 80}ms` }}
               >
-                {item}
-              </a>
+                {item.title}
+              </Link>
             ))}
           </div>
 
@@ -158,21 +179,23 @@ const Header = () => {
         </div>
 
         {/* Header */}
-        <header className="max-w-7xl mx-auto w-full px-4 py-4 flex items-center justify-between text-zinc-900">
+        <header className="max-w-7xl mx-auto w-full px-4 py-4 flex items-center justify-between text-zinc-900 font-sans ">
           <h1 className="text-2xl font-semibold uppercase">Kurja Law</h1>
 
           {/* Desktop Nav */}
           <nav className="hidden md:block">
             <ul className="flex gap-6 items-center font-semibold">
               {navItems.map((item) => (
-                <li key={item} className="relative group cursor-pointer pb-1">
-                  {item}
-                  <span
-                    className="absolute left-0 bottom-0 h-[2px] w-full bg-black
+                <Link key={item.id} href={item.href}>
+                  <li className="relative group cursor-pointer pb-1">
+                    {item.title}
+                    <span
+                      className="absolute left-0 bottom-0 h-[2px] w-full bg-black
                     origin-left scale-x-0 group-hover:scale-x-100
                     transition-transform duration-300"
-                  />
-                </li>
+                    />
+                  </li>
+                </Link>
               ))}
             </ul>
           </nav>

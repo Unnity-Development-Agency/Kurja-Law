@@ -3,11 +3,13 @@ import InfoBar from "./components/InfoBar";
 import Header from "./components/Header";
 import HeroSlider from "./components/HomeComponents/HeroSlider";
 import Expertise from "./components/HomeComponents/Expertise";
+import OpenToTop from "./components/HomeComponents/OpenToTop";
 
 export default function Home() {
   return (
     <>
       <section>
+        <OpenToTop />
         <InfoBar />
         <Header />
         <HeroSlider />
