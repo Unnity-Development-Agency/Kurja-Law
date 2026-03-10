@@ -70,65 +70,62 @@ const page = () => {
           <Link
             key={item.id}
             href={`/expertise${item.slug}`}
-            className={` ${i >= 8 ? "md:col-span-2" : ""}`}
+            className={`
+              ${i >= 8 ? "lg:col-span-2" : ""}
+              group relative overflow-hidden
+            bg-[#f9f6f2] border border-[#8B6D38]/20 rounded-xl cursor-pointer
+              flex flex-col items-center justify-start gap-3 px-5 py-7
+            hover:bg-[#2C1F0E] hover:border-[#2C1F0E]
+              hover:shadow-[0_20px_50px_rgba(44,31,14,0.28)]
+              ${visible.includes(i) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-7"}
+             `}
+            style={{
+              transition:
+                "opacity 0.55s ease, transform 0.55s cubic-bezier(0.22,1,0.36,1), box-shadow 0.35s ease, background-color 0.35s ease, border-color 0.35s ease",
+            }}
           >
+            {/* Corner accent */}
+            <span className="absolute top-0 right-0 w-14 h-14 bg-[#8B6D38]/5 rounded-bl-full group-hover:bg-white/5 transition-colors duration-300" />
+            <span className="absolute bottom-0 left-0 w-10 h-10 bg-[#8B6D38]/5 rounded-tr-full group-hover:bg-white/5 transition-colors duration-300" />
+
+            {/* Icon circle */}
             <div
               style={{
                 transition:
-                  "opacity 0.55s ease, transform 0.55s cubic-bezier(0.22,1,0.36,1), box-shadow 0.35s ease, background-color 0.35s ease, border-color 0.35s ease",
+                  "background-color 0.35s ease, border-color 0.35s ease",
               }}
-              className={`
-              group relative overflow-hidden
-              bg-[#f9f6f2] border border-[#8B6D38]/20 rounded-xl cursor-pointer
-              flex flex-col items-center justify-start gap-3 px-5 py-7
-              hover:bg-[#2C1F0E] hover:border-[#2C1F0E]
-              hover:shadow-[0_20px_50px_rgba(44,31,14,0.28)]}
-              ${visible.includes(i) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-7"}
-            `}
+              className="w-22 h-22 rounded-full bg-[#F8F2E8] border border-[#8B6D38]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-white/10 group-hover:border-[#C9A84C]/50"
             >
-              {/* Corner accent */}
-              <span className="absolute top-0 right-0 w-14 h-14 bg-[#8B6D38]/5 rounded-bl-full group-hover:bg-white/5 transition-colors duration-300" />
-              <span className="absolute bottom-0 left-0 w-10 h-10 bg-[#8B6D38]/5 rounded-tr-full group-hover:bg-white/5 transition-colors duration-300" />
-
-              {/* Icon circle */}
-              <div
-                style={{
-                  transition:
-                    "background-color 0.35s ease, border-color 0.35s ease",
-                }}
-                className="w-22 h-22 rounded-full bg-[#F8F2E8] border border-[#8B6D38]/20 flex items-center justify-center flex-shrink-0 group-hover:bg-white/10 group-hover:border-[#C9A84C]/50"
-              >
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="w-14 h-14 object-contain transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:brightness-[1]"
-                />
-              </div>
-
-              {/* Title */}
-              <h3
-                style={{ transition: "color 0.35s ease" }}
-                className="font-serif text-[15px] md:text-[17px] font-semibold text-[#1a1610] text-center leading-snug group-hover:text-white"
-              >
-                {item.title}
-              </h3>
-
-              {/* Animated divider */}
-              <span
-                style={{
-                  transition: "width 0.35s ease, background-color 0.35s ease",
-                }}
-                className="block h-px w-8 bg-[#8B6D38]/30 group-hover:w-12 group-hover:bg-[#C9A84C]"
+              <img
+                src={item.image}
+                alt={item.title}
+                className="w-14 h-14 object-contain transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:brightness-[1]"
               />
-
-              {/* Sub-label */}
-              <p
-                style={{ transition: "color 0.35s ease" }}
-                className="text-[10px] tracking-[0.2em] uppercase text-[#8B6D38]/55 group-hover:text-[#C9A84C]/75 font-light"
-              >
-                Legal Service
-              </p>
             </div>
+
+            {/* Title */}
+            <h3
+              style={{ transition: "color 0.35s ease" }}
+              className="font-serif text-[15px] md:text-[17px] font-semibold text-[#1a1610] text-center leading-snug group-hover:text-white"
+            >
+              {item.title}
+            </h3>
+
+            {/* Animated divider */}
+            <span
+              style={{
+                transition: "width 0.35s ease, background-color 0.35s ease",
+              }}
+              className="block h-px w-8 bg-[#8B6D38]/30 group-hover:w-12 group-hover:bg-[#C9A84C]"
+            />
+
+            {/* Sub-label */}
+            <p
+              style={{ transition: "color 0.35s ease" }}
+              className="text-[10px] tracking-[0.2em] uppercase text-[#8B6D38]/55 group-hover:text-[#C9A84C]/75 font-light"
+            >
+              Legal Service
+            </p>
           </Link>
         ))}
       </div>

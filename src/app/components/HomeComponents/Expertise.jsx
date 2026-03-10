@@ -27,9 +27,9 @@ const Expertise = () => {
   }, []);
 
   return (
-    <section ref={sectionRef} className="bg-[#F1DDBF] py-16 px-4">
+    <section ref={sectionRef} className="bg-[#F1DDBF] py-14 px-4">
       {/* Heading */}
-      <div className="text-center mb-14">
+      <div className="text-center mb-6 md:mb-10">
         <p className="text-[11px] tracking-[0.25em] uppercase text-[#8B6D38] font-light mb-3">
           Practice Areas
         </p>
@@ -47,7 +47,7 @@ const Expertise = () => {
       <div className="max-w-full w-full">
         <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
           {expertise?.slice(0, 8).map((item, i) => (
-            <Link href={`/expertise/${item.slug}`} key={item.id}>
+            <Link href={`/expertise${item.slug}`} key={item.id}>
               <div
                 key={item.id}
                 style={{

@@ -17,7 +17,7 @@ const page = () => {
     <div>
       <InfoBar />
       <Header />
-      <section className="bg-[#F1DDBF]">
+      <section className="bg-[#F9F6F2]">
         {/* Hero Banner */}
         <div className="max-w-full w-full pb-10 md:pb-16">
           <div className="relative max-w-full w-full h-44">
@@ -147,9 +147,9 @@ const page = () => {
                           <span className="block w-16 h-px bg-linear-to-l from-transparent to-[#8B6D38]" />
                         </div>
                       </div>
-
                       {/* Description */}
-                      <p className="text-[#3d2b12] text-base leading-relaxed font-sans">
+                      {/* text-[#3d2b12] */}
+                      <p className=" text-black text-base leading-relaxed font-sans">
                         {item.description}
                       </p>
                     </div>

@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import HeroSlider from "./components/HomeComponents/HeroSlider";
 import Expertise from "./components/HomeComponents/Expertise";
 import OpenToTop from "./components/HomeComponents/OpenToTop";
+import About from "./components/HomeComponents/About";
 
 export default function Home() {
   return (
@@ -13,6 +14,8 @@ export default function Home() {
         <InfoBar />
         <Header />
         <HeroSlider />
+        <About />
+
         <Expertise />
       </section>
     </>

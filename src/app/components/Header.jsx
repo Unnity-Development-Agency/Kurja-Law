@@ -5,12 +5,14 @@ import { MdOutlineAddIcCall, MdOutlineMail } from "react-icons/md";
 import { FaFacebookSquare } from "react-icons/fa";
 import { BsLinkedin, BsInstagram } from "react-icons/bs";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
   const [headerHeight, setHeaderHeight] = useState(0);
   const headerRef = useRef(null);
+  const pathname = usePathname();
 
   const navItems = [
     {
@@ -190,9 +192,9 @@ const Header = () => {
                   <li className="relative group cursor-pointer pb-1">
                     {item.title}
                     <span
-                      className="absolute left-0 bottom-0 h-[2px] w-full bg-black
+                      className={`absolute left-0 bottom-0 h-[2px] w-full bg-black
                     origin-left scale-x-0 group-hover:scale-x-100
-                    transition-transform duration-300"
+                    transition-transform duration-300 ${pathname === item.href ? "scale-x-100" : ""}`}
                     />
                   </li>
                 </Link>
