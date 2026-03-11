@@ -47,7 +47,7 @@ const Expertise = () => {
       <div className="max-w-full w-full">
         <div className="max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
           {expertise?.slice(0, 8).map((item, i) => (
-            <Link href={`/expertise${item.slug}`} key={item.id}>
+            <Link href={`/expertise/${item.slug}`} key={item.id}>
               <div
                 key={item.id}
                 style={{

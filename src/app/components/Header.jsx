@@ -181,8 +181,14 @@ const Header = () => {
         </div>
 
         {/* Header */}
-        <header className="max-w-7xl mx-auto w-full px-4 py-4 flex items-center justify-between text-zinc-900 font-sans ">
-          <h1 className="text-2xl font-semibold uppercase">Kurja Law</h1>
+        <header className="max-w-7xl mx-auto w-full px-4 py-2 flex items-center justify-between text-zinc-900 font-sans ">
+          <div className=" h-13 w-13 md:h-16 md:w-16">
+            <img
+              src="/kurja-logo.png"
+              alt=""
+              className="object-cover h-full w-full"
+            />
+          </div>
 
           {/* Desktop Nav */}
           <nav className="hidden md:block">
