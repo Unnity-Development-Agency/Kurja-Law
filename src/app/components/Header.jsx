@@ -99,7 +99,7 @@ const Header = () => {
 
         {/* Mobile Menu — fixed,*/}
         <div
-          className={`fixed top-0 right-0 h-screen w-[75%] max-w-[320px] bg-[#F1DDBF] z-[60] shadow-[-8px_0_30px_rgba(0,0,0,0.1)]
+          className={`fixed top-0 right-0 h-screen w-[75%] max-w-[320px] bg-[#F1DDBF] z-50 shadow-[-8px_0_30px_rgba(0,0,0,0.1)]
           flex flex-col px-8 pt-10 pb-10 transition-transform duration-500 ${
             menuOpen ? "translate-x-0" : "translate-x-full"
           }`}
@@ -198,7 +198,7 @@ const Header = () => {
                   <li className="relative group cursor-pointer pb-1">
                     {item.title}
                     <span
-                      className={`absolute left-0 bottom-0 h-[2px] w-full bg-black
+                      className={`absolute left-0 bottom-0 h-0.5 w-full bg-black
                     origin-left scale-x-0 group-hover:scale-x-100
                     transition-transform duration-300 ${pathname === item.href ? "scale-x-100" : ""}`}
                     />
@@ -215,16 +215,16 @@ const Header = () => {
           {/* Hamburger */}
           <div
             onClick={() => setMenuOpen(!menuOpen)}
-            className="flex flex-col gap-[5px] md:hidden cursor-pointer z-[100]"
+            className="flex flex-col gap-1.25 md:hidden cursor-pointer z-50"
           >
             <span
-              className={`w-[26px] h-[2px] bg-black transition-all duration-300 ${menuOpen ? "translate-y-[7px] rotate-45" : ""}`}
+              className={`w-6.5 h-0.5 bg-black transition-all duration-300 ${menuOpen ? "translate-y-1.75 rotate-45" : ""}`}
             />
             <span
-              className={`w-[26px] h-[2px] bg-black transition-all duration-300 ${menuOpen ? "opacity-0 scale-x-0" : ""}`}
+              className={`w-6.5 h-0.5 bg-black transition-all duration-300 ${menuOpen ? "opacity-0 scale-x-0" : ""}`}
             />
             <span
-              className={`w-[26px] h-[2px] bg-black transition-all duration-300 ${menuOpen ? "-translate-y-[7px] -rotate-45" : ""}`}
+              className={`w-6.5 h-0.5 bg-black transition-all duration-300 ${menuOpen ? "-translate-y-1.75 -rotate-45" : ""}`}
             />
           </div>
         </header>
