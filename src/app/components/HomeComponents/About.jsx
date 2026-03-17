@@ -30,7 +30,7 @@ const About = () => {
           bottom: 0; left: 0;
           width: 0%;
           height: 1.5px;
-          background-color: #8B6D38;
+          background-color: #525E75;
           transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .read-btn:hover::after { width: 100%; }
@@ -40,30 +40,30 @@ const About = () => {
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-12 md:mb-16">
-            <p className="text-[11px] tracking-[0.25em] uppercase text-[#8B6D38] font-light mb-3">
+            <p className="text-[11px] tracking-[0.25em] uppercase text-[#525E75] font-light mb-3">
               Our Story
             </p>
             <h2 className="font-serif text-4xl md:text-5xl font-semibold text-[#1a1610] mb-5">
               About Us
             </h2>
             <div className="flex items-center justify-center gap-3">
-              <span className="block w-16 h-px bg-linear-to-r from-transparent to-[#8B6D38]" />
-              <span className="block w-2 h-2 rotate-45 bg-[#8B6D38]" />
-              <span className="block w-16 h-px bg-linear-to-l from-transparent to-[#8B6D38]" />
+              <span className="block w-16 h-px bg-gradient-to-r from-transparent to-[#525E75]" />
+              <span className="block w-2 h-2 rotate-45 bg-[#525E75]" />
+              <span className="block w-16 h-px bg-gradient-to-l from-transparent to-[#525E75]" />
             </div>
           </div>
 
           {/* Our Name Section */}
           <div className="mb-7 md:mb-14">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-px bg-[#c9a84c]" />
-              <span className="text-[#8B6D38]">
+              <div className="w-8 h-px bg-[#525E75]" />
+              <span className="text-[#525E75]">
                 <GiInjustice size={18} />
               </span>
-              <p className="text-[11px] tracking-[0.2em] uppercase text-[#8B6D38] font-medium">
+              <p className="text-[11px] tracking-[0.2em] uppercase text-[#525E75] font-medium">
                 Our Name
               </p>
-              <div className="flex-1 h-px bg-linear-to-r from-[#c9a84c]/40 to-transparent" />
+              <div className="flex-1 h-px bg-gradient-to-r from-[#525E75]/40 to-transparent" />
             </div>
 
             <h3 className="font-serif text-2xl md:text-3xl font-semibold text-[#2C1F0E] mb-4">
@@ -78,7 +78,7 @@ const About = () => {
 
             <button
               onClick={() => setExpendAbout(!expendAbout)}
-              className="read-btn relative mt-4 flex items-center gap-1.5 text-xs uppercase tracking-widest font-semibold text-[#8B6D38] transition-colors duration-300 hover:text-[#2C1F0E] pb-0.5 cursor-pointer"
+              className="read-btn relative mt-4 flex items-center gap-1.5 text-xs uppercase tracking-widest font-semibold text-[#525E75] transition-colors duration-300 hover:text-[#2C1F0E] pb-0.5 cursor-pointer"
             >
               <span>{expendAbout ? "Read Less" : "Read More"}</span>
               <span
@@ -91,9 +91,9 @@ const About = () => {
 
           {/* Divider */}
           <div className="items-center gap-4 mb-14 hidden md:flex">
-            <div className="flex-1 h-px bg-linear-to-r from-transparent to-[#8B6D38]/20" />
-            <span className="block w-1.5 h-1.5 rotate-45 bg-[#c9a84c]/50" />
-            <div className="flex-1 h-px bg-linear-to-l from-transparent to-[#8B6D38]/20" />
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent to-[#525E75]/20" />
+            <span className="block w-1.5 h-1.5 rotate-45 bg-[#525E75]/50" />
+            <div className="flex-1 h-px bg-gradient-to-l from-transparent to-[#525E75]/20" />
           </div>
 
           {/* Our Founder Section */}
@@ -101,52 +101,22 @@ const About = () => {
             {/* Left — founder text */}
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-8 h-px bg-[#c9a84c]" />
-                <span className="text-[#8B6D38]">
+                <div className="w-8 h-px bg-[#525E75]" />
+                <span className="text-[#525E75]">
                   <GiInjustice size={18} />
                 </span>
-                <p className="text-[11px] tracking-[0.2em] uppercase text-[#8B6D38] font-medium">
+                <p className="text-[11px] tracking-[0.2em] uppercase text-[#525E75] font-medium">
                   Our Founder
                 </p>
-                <div className="flex-1 h-px bg-linear-to-r from-[#c9a84c]/40 to-transparent" />
+                <div className="flex-1 h-px bg-linear-to-r from-[#525E75]/40 to-transparent" />
               </div>
 
               <h3 className="font-serif text-2xl md:text-3xl font-semibold text-[#2C1F0E] mb-1">
                 Ishan Harlalka
               </h3>
-              <p className="text-[11px] tracking-[0.18em] uppercase text-[#8B6D38]/70 font-light mb-5">
+              <p className="text-[11px] tracking-[0.18em] uppercase text-[#525E75]/70 font-light mb-5">
                 Dispute Resolution Lawyer
               </p>
-
-              {/* Stats */}
-              <div className="flex items-center gap-6 mb-7 py-4 border-y border-[#8B6D38]/10">
-                <div className="text-center">
-                  <p className="font-serif text-2xl font-bold text-[#2C1F0E]">
-                    10+
-                  </p>
-                  <p className="text-[10px] uppercase tracking-widest text-[#8B6D38]/70 mt-0.5">
-                    Years Exp.
-                  </p>
-                </div>
-                <div className="w-px h-8 bg-[#c9a84c]/30" />
-                <div className="text-center">
-                  <p className="font-serif text-2xl font-bold text-[#2C1F0E]">
-                    170+
-                  </p>
-                  <p className="text-[10px] uppercase tracking-widest text-[#8B6D38]/70 mt-0.5">
-                    Cases
-                  </p>
-                </div>
-                <div className="w-px h-8 bg-[#c9a84c]/30" />
-                <div className="text-center">
-                  <p className="font-serif text-2xl font-bold text-[#2C1F0E]">
-                    5
-                  </p>
-                  <p className="text-[10px] uppercase tracking-widest text-[#8B6D38]/70 mt-0.5">
-                    Int'l Forums
-                  </p>
-                </div>
-              </div>
 
               <p className="text-sm md:text-base text-gray-600 leading-relaxed">
                 {founderText}
@@ -163,7 +133,7 @@ const About = () => {
                 ].map((court) => (
                   <span
                     key={court}
-                    className="text-[10px] uppercase tracking-wider text-[#8B6D38] border border-[#8B6D38]/30 px-3 py-1 rounded-sm"
+                    className="text-[10px] uppercase tracking-wider text-[#525E75] border border-[#525E75]/30 px-3 py-1 rounded-sm"
                   >
                     {court}
                   </span>
@@ -173,30 +143,28 @@ const About = () => {
 
             {/* Right — image */}
             <div className="relative flex flex-col items-center">
-              {/* Offset decorative border */}
-              <div className="relative w-full max-w-lg mx-auto">
-                <div className="absolute hidden md:block -bottom-23 -left-3 w-14 h-14 border-b-2 border-l-2 border-[#8B6D38]/25 pointer-events-none z-0" />
-                <div className="absolute hidden md:block -bottom-23 -right-3 w-14 h-14 border-b-2 border-r-2 border-[#8B6D38]/25 pointer-events-none z-0" />
-                <div className="absolute hidden md:block top-18 -left-3 w-14 h-14 border-t-2 border-l-2 border-[#8B6D38]/25 pointer-events-none z-0" />
-                <div className="absolute hidden md:block top-18 -right-3 w-14 h-14 border-t-2 border-r-2 border-[#8B6D38]/25 pointer-events-none z-0" />
+              <div className="relative w-full max-w-md mx-auto">
+                <div className="absolute hidden md:block -bottom-16 -left-3 w-14 h-14 border-b-2 border-l-2 border-[#525E75]/25 pointer-events-none z-0" />
+                <div className="absolute hidden md:block -bottom-16 -right-3 w-14 h-14 border-b-2 border-r-2 border-[#525E75]/25 pointer-events-none z-0" />
+                <div className="absolute hidden md:block top-10 -left-3 w-14 h-14 border-t-2 border-l-2 border-[#525E75]/25 pointer-events-none z-0" />
+                <div className="absolute hidden md:block top-10 -right-3 w-14 h-14 border-t-2 border-r-2 border-[#525E75]/25 pointer-events-none z-0" />
 
                 {/* Image */}
-                <div className="relative top-6 md:top-20 z-10 overflow-hidden shadow-lg">
+                <div className="relative top-6 md:top-12 z-10 overflow-hidden shadow-lg">
                   <img
                     src="/kurja-founder.png"
                     alt="Ishan Harlalka — Founder"
                     className="w-full object-cover"
                   />
-                  {/* dark effectt */}
-                  <div className="absolute bottom-0 left-0 w-full h-24 bg-linear-to-t from-[#2C1F0E]/60 to-transparent" />
+                  <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#525E75]/60 to-transparent" />
 
-                  {/* Name*/}
+                  {/* Name plate */}
                   <div className="absolute bottom-5 left-5 right-5">
-                    <div className="border-l-2 border-[#c9a84c] pl-3">
+                    <div className="border-l-2 border-white/60 pl-3">
                       <p className="font-serif text-sm font-semibold text-white">
                         Ishan Harlalka
                       </p>
-                      <p className="text-[10px] tracking-widest uppercase text-[#c9a84c]">
+                      <p className="text-[10px] tracking-widest uppercase text-white/70">
                         Founder, Kurja Law
                       </p>
                     </div>

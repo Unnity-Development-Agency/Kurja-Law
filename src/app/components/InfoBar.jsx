@@ -22,7 +22,7 @@ const InfoBar = () => {
           >
             <MdOutlineAddIcCall size={18} />
             <span className="text-sm font-medium tracking-wide">
-              +91 1234567890
+              +91 9654656822
             </span>
           </a>
 
@@ -55,12 +55,12 @@ const InfoBar = () => {
           {/* Email */}
           <div className="flex items-center gap-2">
             <a
-              href="mailto:info@example.com"
+              href="mailto:contact@kurjalaw.com"
               className="flex gap-2 items-center text-white hover:text-gray-200 transition-colors"
             >
               <MdOutlineMail size={18} />
               <span className="text-sm font-medium tracking-wide">
-                info@example.com
+                contact@kurjalaw.com
               </span>
             </a>
             <button
