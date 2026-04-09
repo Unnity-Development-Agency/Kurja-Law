@@ -150,9 +150,10 @@ const Contact = () => {
           </div>
 
           {/* Two col layout */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 items-stretch">
             {/* Left — Form */}
-            <div className="flex flex-col order-2">
+
+            <div className="flex flex-col md:col-span-2">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-6 h-px bg-[#525E75]" />
                 <p className="text-[11px] tracking-[0.2em] uppercase text-[#525E75] font-medium">
@@ -273,9 +274,9 @@ const Contact = () => {
             </div>
 
             {/* Right — Image */}
-            <div className="hidden order-1 md:block bg-[#F9F6F2] p-10">
+            <div className="hidden  md:block bg-[#F9F6F2] p-10">
               <img
-                src="/justice-bg2.png"
+                src="/Contact-kurja-logo.png"
                 alt="Kurja Law Office"
                 className="w-full h-full object-cover rounded-sm scale-110 opacity-80 pointer-events-none"
               />

@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Disputes and Litigation",
-    "image": "/Disputes.png",
+    "image": "/max.png",
     "slug": "disputes-and-litigation",
     "description": "We represent clients in complex, high-stakes disputes before the Supreme Court of India, High Courts, District Courts, Tribunals, and Arbitral Forums. Our practice covers civil, commercial, and regulatory litigation, including contractual disputes, civil suits, debt recovery proceedings, cheque dishonor proceedings, property disputes, and land conflicts. We adopt a strategic, result-oriented approach tailored to each case. Our team has also represented clients in arbitrations conducted by the Delhi International Arbitration Centre (DIAC), London Court of International Arbitration (LCIA), Singapore International Arbitration Centre (SIAC), and ad-hoc arbitral tribunals.",
     "gallery": [
@@ -15,7 +15,7 @@
   {
     "id": 2,
     "title": "Contracts",
-    "image": "/Contract.png",
+    "image": "/Contracts.png",
     "slug": "contracts",
     "description": "We provide advice on drafting, reviewing, negotiating, and enforcing contracts across various sectors. Our services cover full-spectrum drafting, negotiation, and vetting of commercial agreements, such as NDAs, MOUs, Master Service Agreements, EPC, turnkey contracts, share purchase agreements, privacy policies, referral agreements, and property-related contracts. We prioritize aligning legal documents with clients’ business goals and risk levels. Our expertise also includes handling commercial agreements, joint ventures, shareholder arrangements, service and supply contracts, and conducting dispute risk assessments to protect business interests.",
     "gallery": [
@@ -93,7 +93,7 @@
   {
     "id": 8,
     "title": "Insolvency and Bankruptcy",
-    "image": "/insoluency.png",
+    "image": "/insolvency.png",
     "slug": "insolvency-and-bankruptcy",
     "description": "We advise and represent financial creditors, operational creditors, and corporate debtors under the Insolvency and Bankruptcy framework. Our services include initiation and defense of CIRP proceedings, resolution strategy, and related litigation.",
     "gallery": [

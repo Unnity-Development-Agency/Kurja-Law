@@ -9,39 +9,37 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import Button from "../Button";
 import Button2 from "../Button2";
+import Link from "next/link";
 
 const slides = [
   {
     img: "/Slider-1.png",
-    tag: "Trusted Legal Counsel",
-    h1: "Justice Starts Here",
-    h2: "Your Case. Our Commitment.",
-    p: "With years of courtroom experience and a client-first approach, we deliver legal solutions that protect what matters most to you.",
-    btn: "EXPLORE OUR EXPERTISE",
+    tag: "Strategic Counsel. Decisive Action",
+    h1: "Navigating Complex Legal Terrain",
+    // h2: "Your Case. Our Commitment.",
+    p: "At Kurja Law, we navigate complex legal challenges with precision and persistence. From high-stakes disputes to critical advisory, we deliver clear strategy, decisive action, and unwavering representation.",
+    btn1: "VIEW PRACTICE AREAS",
+    btn2: "BOOK CONSULTATION",
+    href: "/expertise/disputes-and-litigation",
   },
   {
     img: "/Slider-2.jpeg",
     tag: "Expert Representation",
-    h1: "Comprehensive Legal Solutions",
-    h2: "One Firm. Every Legal Need.",
-    p: "From corporate disputes to personal legal matters — we bring sharp legal minds and proven strategies to every case we take on.",
-    btn: "VIEW PRACTICE AREAS",
+    h1: "For disputes that demand precision",
+    // h2: "One Firm. Every Legal Need.",
+    p: "A modern litigation and advisory practice offering sharp legal insight across disputes, corporate matters, and regulatory frameworks – tailored for businesses and individuals alike.",
+    btn1: "EXPLORE OUR EXPERTISE",
+    btn2: "BOOK CONSULTATION",
+    href: "/expertise",
   },
   {
     img: "/Slider-3.png",
     tag: "Client First Approach",
-    h1: "Your Legal Journey Begins Today",
-    h2: "Bold Representation. Real Results.",
-    p: "Don't face legal challenges alone. Our team is ready to listen, advise, and fight for the outcome you deserve — every step of the way.",
-    btn: "BOOK CONSULTATION",
-  },
-  {
-    img: "/Slider-4.jpeg",
-    tag: "Confidential Consultation",
-    h1: "Legal Help You Can Trust",
-    h2: "Clarity in Complex Situations.",
-    p: "Navigating the legal system can be overwhelming. Let our experts simplify the process and guide you toward the best possible outcome.",
-    btn: "BOOK CONSULTATION",
+    h1: "Representing clients where it matters most",
+    // h2: "Bold Representation. Real Results.",
+    p: "We represent clients in critical disputes and decisions — combining legal expertise with commercial understanding to protect what matters most.",
+    btn1: "BOOK CONSULTATION",
+    href: "/under-maintenance",
   },
 ];
 
@@ -178,15 +176,15 @@ export default function HeroSlider() {
               {/* Fixed Header */}
               <div className="disclaimer-child shrink-0 px-8 pt-5 pb-4 bg-white">
                 <div className="flex items-center justify-center gap-3 mb-3">
-                  <span className="text-[#8B6D38] text-xl">
+                  {/* <span className="text-[#8B6D38] text-xl">
                     <GiEagleEmblem />
-                  </span>
+                  </span> */}
                   <h2 className="text-2xl font-semibold text-[#2C1F0E] tracking-wide font-serif">
                     Disclaimer
                   </h2>
-                  <span className="text-[#8B6D38] text-xl">
+                  {/* <span className="text-[#8B6D38] text-xl">
                     <GiEagleEmblem />
-                  </span>
+                  </span> */}
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="block flex-1 h-px bg-linear-to-r from-transparent to-[#c9a84c]/50" />
@@ -306,15 +304,15 @@ export default function HeroSlider() {
                 <div className="absolute inset-0 bg-linear-to-b from-black/55 via-black/35 to-black/65 flex items-center justify-center px-6">
                   <div className="max-w-4xl w-full flex flex-col items-center gap-4 text-center text-white">
                     <div className="anim-badge flex items-center gap-2 border border-[#8B6D38]/60 bg-[#8B6D38]/10 px-4 py-1 rounded-sm">
-                      <span className="text-[#c9a84c] text-xs">
+                      {/* <span className="text-[#c9a84c] text-xs">
                         <GiEagleEmblem />
-                      </span>
+                      </span> */}
                       <span className="text-[#c9a84c] text-xs uppercase tracking-widest font-medium">
                         {slide.tag}
                       </span>
-                      <span className="text-[#c9a84c] text-xs">
+                      {/* <span className="text-[#c9a84c] text-xs">
                         <GiEagleEmblem />
-                      </span>
+                      </span> */}
                     </div>
 
                     <div className="anim-divider-top flex items-center gap-3">
@@ -327,9 +325,9 @@ export default function HeroSlider() {
                       {slide.h1}
                     </h1>
 
-                    <h2 className="anim-h2 font-serif text-2xl md:text-4xl font-semibold text-[#F1DDBF] leading-snug">
+                    {/* <h2 className="anim-h2 font-serif text-2xl md:text-4xl font-semibold text-[#F1DDBF] leading-snug">
                       {slide.h2}
-                    </h2>
+                    </h2> */}
 
                     <div className="anim-divider-bot flex items-center gap-3">
                       <span className="block w-16 h-px bg-linear-to-r from-transparent to-[#c9a84c]" />
@@ -340,7 +338,17 @@ export default function HeroSlider() {
                     <p className="anim-p text-sm md:text-base text-white/80 max-w-2xl leading-relaxed font-sans font-light tracking-wide">
                       {slide.p}
                     </p>
-                    <Button name={`${slide.btn}`} />
+                    <div className="flex flex-col md:flex-row justify-center gap-4">
+                      <Link href={`${slide.href}`}>
+                        <Button name={`${slide.btn1}`} />
+                      </Link>
+                      <Link
+                        href={`${slide.href}`}
+                        className={`${i == 2 ? "hidden" : ""}`}
+                      >
+                        <Button name={`${slide.btn2}`} />
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>

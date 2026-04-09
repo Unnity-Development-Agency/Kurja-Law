@@ -145,7 +145,8 @@ const Footer = () => {
                 className="mt-0.5 shrink-0 text-white/50"
               />
               <span className="leading-relaxed">
-                216, Second Floor, RG Complex - 2,
+                <span className="font-semibold">Primary Office :</span> 216,
+                Second Floor, RG Complex - 2,
                 <br />
                 Prashant Vihar, Sector - 14,
                 <br />
@@ -160,13 +161,14 @@ const Footer = () => {
                 className="mt-0.5 shrink-0 text-white/50"
               />
               <span className="leading-relaxed">
-                E-48, 2nd Floor, Prashant Vihar,
+                <span className="font-semibold">Also At :</span> E-48, 2nd
+                Floor, Prashant Vihar,
                 <br />
                 New Delhi – 110085
               </span>
             </li>
 
-            {/* Haryana */}
+            {/* Haryana
             <li className="flex items-start gap-3 text-sm text-white/70">
               <MdLocationOn
                 size={17}
@@ -177,7 +179,7 @@ const Footer = () => {
                 <br />
                 Kundli, Sonipat, Haryana – 131029
               </span>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

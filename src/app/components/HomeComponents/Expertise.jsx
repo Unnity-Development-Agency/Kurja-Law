@@ -78,7 +78,7 @@ const Expertise = () => {
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="w-14 h-14 object-contain transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:brightness-[1.1]"
+                  className="w-14 h-14 object-contain transition-all duration-500 ease-in-out group-hover:scale-110 group-hover:invert group-hover:brightness-200"
                 />
               </div>
 

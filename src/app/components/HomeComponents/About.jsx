@@ -46,13 +46,13 @@ const About = () => {
         id="about"
         className="relative z-20 bg-[#F9F6F2] text-black font-sans px-4 py-12 md:py-16 h-auto"
       >
-        <div className="absolute bottom-0 left-20 h-44 w-44 pointer-events-none hidden sm:block">
+        {/* <div className="absolute bottom-0 left-20 h-44 w-44 pointer-events-none hidden sm:block">
           <img
             src="/justice-bg.png"
             alt=""
             className="w-full h-full object-cover scale-x-[-1] z-10 opacity-15"
           />
-        </div>
+        </div> */}
         <div className="absolute top-16 left-20 h-44 w-44 pointer-events-none hidden sm:block ">
           <img
             src="/hat-vector.png"
