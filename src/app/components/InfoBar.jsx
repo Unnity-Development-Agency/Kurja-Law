@@ -89,7 +89,11 @@ const InfoBar = () => {
             <a href="#" aria-label="Facebook" className="text-white">
               <FaFacebookSquare size={17} />
             </a>
-            <a href="#" aria-label="LinkedIn" className="text-white">
+            <a
+              href="https://www.linkedin.com/company/kurja-law/"
+              aria-label="LinkedIn"
+              className="text-white"
+            >
               <BsLinkedin size={16} />
             </a>
             <a href="#" aria-label="Instagram" className="text-white">

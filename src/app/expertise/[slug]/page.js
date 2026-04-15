@@ -9,6 +9,7 @@ import { HiMiniArrowLongRight } from "react-icons/hi2";
 import { GiInjustice } from "react-icons/gi";
 import Link from "next/link";
 import Image from "next/image";
+import { Footer } from "flowbite-react";
 
 const page = () => {
   const params = useParams();
@@ -199,6 +200,7 @@ const page = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };
