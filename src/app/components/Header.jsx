@@ -32,11 +32,11 @@ const Header = () => {
       title: "Expertise",
       href: "/expertise",
     },
-    {
-      id: 4,
-      title: "Blog",
-      href: "/blog",
-    },
+    // {
+    //   id: 4,
+    //   title: "Blog",
+    //   href: "/blog",
+    // },
   ];
 
   useEffect(() => {

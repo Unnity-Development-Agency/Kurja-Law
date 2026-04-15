@@ -15,8 +15,8 @@ const Footer = () => {
     { id: 1, title: "Home", path: "/" },
     { id: 2, title: "About Us", path: "/about" },
     { id: 3, title: "Expertise", path: "/expertise" },
-    { id: 4, title: "Blog", path: "/blog" },
-    { id: 5, title: "Careers", path: "/careers" },
+    // { id: 4, title: "Blog", path: "/blog" },
+    // { id: 5, title: "Careers", path: "/careers" },
     { id: 6, title: "Contact Us", path: "/contact" },
   ];
 
@@ -35,7 +35,7 @@ const Footer = () => {
         {/* Col 1 — Brand */}
         <div className="flex flex-col gap-5">
           <img
-            src="/kurja-logo2.png"
+            src="/Kurja-logo2.png"
             alt="Kurja Law"
             className="w-16 h-16 md:h-18 md:w-18 object-contain scale-150"
           />
