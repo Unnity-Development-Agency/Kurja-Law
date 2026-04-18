@@ -193,7 +193,7 @@ const Footer = () => {
           <p className="text-xs text-white/40">
             Designed and Developed by Team
             <a href="https://unnity.in">
-              <strong>Unnity.in</strong>
+              <strong> Unnity.in</strong>
             </a>
           </p>
         </div>
