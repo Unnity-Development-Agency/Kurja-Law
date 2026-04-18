@@ -165,7 +165,11 @@ const Header = () => {
             <a className="text-zinc-800 hover:text-blue-600 transition">
               <FaFacebookSquare size={22} />
             </a>
-            <a className="text-zinc-800 hover:text-blue-500 transition">
+            <a
+              href="https://www.linkedin.com/company/kurja-law/"
+              target="blank"
+              className="text-zinc-800 hover:text-blue-500 transition"
+            >
               <BsLinkedin size={20} />
             </a>
             <a className="text-zinc-800 hover:text-pink-500 transition">
