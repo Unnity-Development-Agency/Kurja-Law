@@ -74,7 +74,7 @@ const page = () => {
             key={item.id}
             href={`/expertise/${item.slug}`}
             className={`
-              ${i >= 12 ? "lg:col-span-2" : ""}
+              ${i >= 12 ? "col-span-2" : ""}
               group relative overflow-hidden
               bg-[#f9f6f2] border border-[#525E75]/20 rounded-xl cursor-pointer
               flex flex-col items-center justify-start gap-3 px-5 py-7
