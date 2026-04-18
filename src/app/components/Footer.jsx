@@ -191,7 +191,7 @@ const Footer = () => {
             © {new Date().getFullYear()} Kurja Law. All rights reserved.
           </p>
           <p className="text-xs text-white/40">
-            Designed and Developed by{" "}
+            Designed and Developed by Team
             <a href="https://unnity.in">
               <strong>Unnity.in</strong>
             </a>
