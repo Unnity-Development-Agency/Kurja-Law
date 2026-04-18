@@ -20,7 +20,8 @@ const slides = [
     p: "At Kurja Law, we navigate complex legal challenges with precision and persistence. From high-stakes disputes to critical advisory, we deliver clear strategy, decisive action, and unwavering representation.",
     btn1: "VIEW PRACTICE AREAS",
     btn2: "BOOK CONSULTATION",
-    href: "/expertise/disputes-and-litigation",
+    href: "/expertise",
+    href2: "https://calendly.com/ishanharlalka-kurjalaw",
   },
   {
     img: "/Slider-2.jpeg",
@@ -31,6 +32,7 @@ const slides = [
     btn1: "EXPLORE OUR EXPERTISE",
     btn2: "BOOK CONSULTATION",
     href: "/expertise",
+    href2: "https://calendly.com/ishanharlalka-kurjalaw",
   },
   {
     img: "/Slider-3.png",
@@ -39,7 +41,7 @@ const slides = [
     // h2: "Bold Representation. Real Results.",
     p: "We represent clients in critical disputes and decisions — combining legal expertise with commercial understanding to protect what matters most.",
     btn1: "BOOK CONSULTATION",
-    href: "/under-maintenance",
+    href2: "https://calendly.com/ishanharlalka-kurjalaw",
   },
 ];
 
@@ -343,7 +345,7 @@ export default function HeroSlider() {
                         <Button name={`${slide.btn1}`} />
                       </Link>
                       <Link
-                        href={`${slide.href}`}
+                        href={`${slide.href2}`}
                         className={`${i == 2 ? "hidden" : ""}`}
                       >
                         <Button name={`${slide.btn2}`} />
