@@ -14,7 +14,7 @@ export default function CalendlyButton() {
   const openCalendly = () => {
     if (typeof window !== "undefined" && window.Calendly) {
       window.Calendly.initPopupWidget({
-        url: "https://calendly.com/shubhamkumar2452004/30min",
+        url: "https://calendly.com/ishanharlalka-kurjalaw",
       });
     }
   };
