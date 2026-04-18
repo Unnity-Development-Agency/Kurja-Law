@@ -102,7 +102,7 @@ const InfoBar = () => {
           </div>
 
           {/* Mail icon only on mobile */}
-          <a href="mailto:info@example.com" className="text-white">
+          <a href="mailto:contact@kurjalaw.com" className="text-white">
             <MdOutlineMail size={17} />
           </a>
         </div>
