@@ -132,7 +132,7 @@ const Header = () => {
           {/* Contact */}
           <div className="flex flex-col gap-4 pt-5">
             <a
-              href="mailto:info@unnityDev.com"
+              href="mailto:contact@kurjalaw.com"
               className={`flex items-center gap-3 text-sm font-medium text-zinc-800 hover:text-zinc-500 transition ${
                 menuOpen
                   ? "opacity-100 translate-y-0"
@@ -141,7 +141,7 @@ const Header = () => {
               style={{ transitionDelay: "580ms" }}
             >
               <MdOutlineMail size={18} />
-              info@unnityDev.com
+              contact@kurjalaw.com
             </a>
             <a
               href="tel:+91 9654656822"
