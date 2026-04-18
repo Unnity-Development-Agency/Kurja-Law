@@ -17,7 +17,7 @@ const InfoBar = () => {
         <div className="hidden sm:flex justify-between items-center">
           {/* Phone */}
           <a
-            href="tel:+911234567890"
+            href="tel:+91 9654656822"
             className="flex gap-2 items-center text-white hover:text-gray-200 transition-colors"
           >
             <MdOutlineAddIcCall size={18} />
@@ -77,11 +77,11 @@ const InfoBar = () => {
         <div className="flex sm:hidden justify-between items-center">
           {/* Phone */}
           <a
-            href="tel:+911234567890"
+            href="tel:+91 9654656822"
             className="flex gap-1.5 items-center text-white"
           >
             <MdOutlineAddIcCall size={16} />
-            <span className="text-xs font-medium">+91 1234567890</span>
+            <span className="text-xs font-medium">+91 965465682</span>
           </a>
 
           {/* Social Icons */}
