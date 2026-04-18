@@ -95,6 +95,7 @@ const About = () => {
             </h3>
 
             <p
+              style={{ textAlign: "justify", textJustify: "inter-word" }}
               className={`about-text text-sm md:text-base text-gray-600 leading-relaxed ${expendAbout ? "expanded" : ""}`}
             >
               {fullText}
@@ -145,9 +146,13 @@ const About = () => {
               {/* <li className="text-sm list-disc md:text-base text-gray-800 leading-relaxed">
                 {founderText[0]}
               </li> */}
-              <ul className="flex flex-col gap-2 px-4 text-sm text-start list-disc md:text-base text-gray-600 leading-relaxed">
+              <ul className="flex flex-col gap-2 px-3 text-sm list-disc md:text-base text-gray-600 leading-relaxed">
                 {textList.map((text, index) => (
-                  <li key={index} className="list-disc">
+                  <li
+                    key={index}
+                    style={{ textAlign: "justify", textJustify: "inter-word" }}
+                    className="list-disc"
+                  >
                     {text}
                   </li>
                 ))}
@@ -175,27 +180,27 @@ const About = () => {
             {/* Right — image */}
             <div className="relative flex flex-col items-center">
               <div className="relative w-full max-w-md mx-auto">
-                <div className="absolute hidden md:block -bottom-36 -left-3 w-14 h-14 border-b-2 border-l-2 border-[#525E75]/25 pointer-events-none z-0" />
-                <div className="absolute hidden md:block -bottom-36 -right-3 w-14 h-14 border-b-2 border-r-2 border-[#525E75]/25 pointer-events-none z-0" />
-                <div className="absolute hidden md:block top-28 -left-3 w-14 h-14 border-t-2 border-l-2 border-[#525E75]/25 pointer-events-none z-0" />
-                <div className="absolute hidden md:block top-28 -right-3 w-14 h-14 border-t-2 border-r-2 border-[#525E75]/25 pointer-events-none z-0" />
+                <div className="absolute hidden md:block -bottom-55 -left-3 w-14 h-14 border-b-2 border-l-2 border-[#525E75]/25 pointer-events-none z-0" />
+                <div className="absolute hidden md:block -bottom-55 -right-3 w-14 h-14 border-b-2 border-r-2 border-[#525E75]/25 pointer-events-none z-0" />
+                <div className="absolute hidden md:block top-46 -left-3 w-14 h-14 border-t-2 border-l-2 border-[#525E75]/25 pointer-events-none z-0" />
+                <div className="absolute hidden md:block top-46 -right-3 w-14 h-14 border-t-2 border-r-2 border-[#525E75]/25 pointer-events-none z-0" />
 
                 {/* Image */}
-                <div className="relative top-6 md:top-32 z-10 overflow-hidden shadow-lg">
+                <div className="relative top-6 md:top-50 z-10 overflow-hidden shadow-lg">
                   <img
-                    src="/kurja-founder.png"
+                    src="/ishanlaw.png"
                     alt="Ishan Harlalka — Founder"
                     className="w-full object-cover"
                   />
                   <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#525E75]/60 to-transparent" />
 
                   {/* Name plate */}
-                  <div className="absolute bottom-5 left-5 right-5">
+                  <div className="absolute bottom-5 left-5 right-5 backdrop-blur-md bg-white/30 max-w-40">
                     <div className="border-l-2 border-white/60 pl-3">
-                      <p className="font-serif text-sm font-semibold text-white">
+                      <p className="font-serif text-sm font-semibold text-black ">
                         Ishan Harlalka
                       </p>
-                      <p className="text-[10px] tracking-widest uppercase text-white/70">
+                      <p className="text-[10px] tracking-widest font-semibold uppercase text-gray-900">
                         Founder, Kurja Law
                       </p>
                     </div>

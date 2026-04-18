@@ -198,7 +198,7 @@ export default function HeroSlider() {
                 <p className="disclaimer-child text-sm text-gray-700 mb-4 leading-relaxed">
                   The purpose of this website is solely to provide general
                   information about{" "}
-                  <span className="font-semibold italic text-[#2C1F0E]">
+                  <span className="font-semibold text-[#2C1F0E]">
                     Kurja Law
                   </span>{" "}
                   and its areas of practice. This website is not intended to

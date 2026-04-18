@@ -55,9 +55,9 @@ const page = () => {
                 Our Expertise
               </h2>
               <div className="flex items-center justify-center gap-3">
-                <span className="block w-16 h-px bg-gradient-to-r from-transparent to-[#8B6D38]" />
+                <span className="block w-16 h-px bg-linear-to-r from-transparent to-[#8B6D38]" />
                 <span className="block w-2 h-2 rotate-45 bg-[#8B6D38]" />
-                <span className="block w-16 h-px bg-gradient-to-l from-transparent to-[#8B6D38]" />
+                <span className="block w-16 h-px bg-linear-to-l from-transparent to-[#8B6D38]" />
               </div>
             </div>
           </div>
@@ -74,7 +74,7 @@ const page = () => {
             key={item.id}
             href={`/expertise/${item.slug}`}
             className={`
-              ${i >= 8 ? "lg:col-span-2" : ""}
+              ${i >= 12 ? "lg:col-span-2" : ""}
               group relative overflow-hidden
               bg-[#f9f6f2] border border-[#525E75]/20 rounded-xl cursor-pointer
               flex flex-col items-center justify-start gap-3 px-5 py-7

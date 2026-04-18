@@ -41,7 +41,7 @@ const Footer = () => {
           />
           <div className="w-8 h-px bg-white/30" />
           <p className="text-sm text-white/70 leading-relaxed">
-            At Kurja Law, we are more than just a law firm — we are your trusted
+            At Kurja Law, we are more than just a law firm - we are your trusted
             legal partners, dedicated to guiding you through the complexities of
             law with clarity, compassion, and expertise.
           </p>

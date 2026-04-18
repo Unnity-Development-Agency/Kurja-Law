@@ -124,7 +124,7 @@ const page = () => {
                   <span>
                     <MdAddCall />
                   </span>
-                  +91 1234567890
+                  +91 9654656822
                 </a>
               </div>
             </div>
@@ -153,7 +153,13 @@ const page = () => {
                       </div>
 
                       {/* Description */}
-                      <p className="text-black text-base leading-relaxed font-sans">
+                      <p
+                        style={{
+                          textAlign: "justify",
+                          textJustify: "inter-word",
+                        }}
+                        className="text-black text-base leading-relaxed font-sans"
+                      >
                         {item.description}
                       </p>
 

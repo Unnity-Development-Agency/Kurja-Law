@@ -79,6 +79,32 @@
   },
   {
     "id": 7,
+    "title": "Information Technology And Data Protection",
+    "image": "/informationTech.png",
+    "slug": "information-technology-and-data-protection",
+    "description": "We advise clients on legal and regulatory issues in the digital and technology space, with a focus on data protection, privacy, and IT compliance. Our services include drafting and reviewing privacy policies, terms of use, and technology contracts, as well as advising on data collection, processing, storage, and cross-border transfers.We assist clients in aligning with applicable IT and data protection laws, establishing internal data governance frameworks, and managing compliance risks. On the contentious side, we represent clients in matters involving data breaches, cybersecurity incidents, and regulatory proceedings, and advise on incident response and risk mitigation.",
+    "gallery": [
+      "/expertise-images/infotech-1.png",
+      "/expertise-images/infotech-2.png",
+      "/expertise-images/infotech-3.png",
+      "/expertise-images/infotech-4.png"
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Writs And Public Interest",
+    "image": "/Writs.png",
+    "slug": "writs-and-public-interest",
+    "description": "We advise and represent clients in constitutional and public law matters before the High Courts and the Supreme Court of India. Our practice includes filing and defending writ petitions under Articles 226 and 32 of the Constitution, involving challenges to administrative action, enforcement of fundamental rights, and questions of legality, jurisdiction, and procedural fairness.We regularly act in matters concerning arbitrariness, violation of natural justice, regulatory overreach, and statutory interpretation. Our services include drafting writ petitions, replies, rejoinders, and interim applications, as well as strategic advisory at pre-litigation stages.We also undertake select public interest matters involving issues of governance, policy implementation, and protection of legal and constitutional rights, with a focused and structured approach to public law litigation.",
+    "gallery": [
+      "/expertise-images/Writs-exp1.png",
+      "/expertise-images/Writs-exp2.png",
+      "/expertise-images/Writs-exp3.png",
+      "/expertise-images/Writs-exp4.png"
+    ]
+  },
+  {
+    "id": 9,
     "title": "Consumer Protection",
     "image": "/Protection.png",
     "slug": "consumer-protection",
@@ -91,7 +117,7 @@
     ]
   },
   {
-    "id": 8,
+    "id": 10,
     "title": "Insolvency and Bankruptcy",
     "image": "/insolvency.png",
     "slug": "insolvency-and-bankruptcy",
@@ -104,7 +130,7 @@
     ]
   },
   {
-    "id": 9,
+    "id": 11,
     "title": "White Collar Litigation",
     "image": "/white-color.png",
     "slug": "white-collar-litigation",
@@ -117,7 +143,7 @@
     ]
   },
   {
-    "id": 10,
+    "id": 12,
     "title": "Service matters and Employment practice",
     "image": "/service.png",
     "slug": "service-matters-and-employment-practice",
@@ -127,6 +153,19 @@
       "/expertise-images/Service-exp2.png",
       "/expertise-images/Service-exp3.png",
       "/expertise-images/Service-exp4.png"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Packaging And Labelling",
+    "image": "/Packaging.png",
+    "slug": "packaging-and-labelling",
+    "description": "We advise clients on regulatory compliance and disputes relating to packaging and labelling across sectors, including food, consumer goods, and e-commerce. In India, labelling requirements for packaged commodities are governed under the Legal Metrology Act, 2009 and the Legal Metrology (Packaged Commodities) Rules, 2011. Labelling of food products is governed under the Food Safety and Standards Act, 2006 and the Food Safety and Standards (Packaging and Labelling) Regulations, 2011, along with applicable standards and guidelines.Our services include reviewing and structuring labels to ensure compliance with statutory declarations, advising on product claims and disclosures, and aligning packaging practices with regulatory requirements. We also represent clients in disputes, enforcement actions, and proceedings before consumer forums, regulatory authorities, and courts arising from alleged mislabelling, non-compliance, or misleading representations.",
+    "gallery": [
+      "/expertise-images/Packaging-exp1.png",
+      "/expertise-images/Packaging-exp2.png",
+      "/expertise-images/Packaging-exp3.png",
+      "/expertise-images/Packaging-exp4.png"
     ]
   }
 ]
