@@ -118,7 +118,7 @@ const page = () => {
                   Speak with our legal experts for a confidential consultation.
                 </p>
                 <a
-                  href="tel:+911234567890"
+                  href="tel:+919654656822"
                   className="flex items-center gap-2 text-white text-sm font-semibold bg-white/15 border border-white/20 px-4 py-2.5 rounded-sm hover:bg-white/25 transition-colors duration-300"
                 >
                   <span>
