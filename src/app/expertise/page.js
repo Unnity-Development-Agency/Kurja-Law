@@ -37,9 +37,9 @@ const page = () => {
 
       {/* Hero Banner */}
       <div className="max-w-full w-full pb-10 md:pb-16">
-        <div className="relative max-w-full w-full h-44">
+        <div className="relative max-w-full w-full h-54">
           <img
-            src="./Our Expertise-1.png"
+            src="./expertise-thick.png"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-[#2c1f0e8b] flex items-center justify-center">
@@ -131,38 +131,6 @@ const page = () => {
             </p>
           </Link>
         ))}
-      </div>
-
-      {/* Call to action */}
-      <div className="max-w-full w-full pb-16">
-        <div className="relative max-w-full w-full h-52 md:h-72">
-          <img
-            src="./Expertise-hero.jpg"
-            className="w-full h-full object-cover object-center"
-          />
-          <div className="absolute inset-0 bg-[#2c1f0e8b]" />
-
-          {/* Decorative corner borders */}
-          <div className="absolute top-4 left-4 w-12 h-12 border-t-2 border-l-2 border-[#8B6D38]/50" />
-          <div className="absolute top-4 right-4 w-12 h-12 border-t-2 border-r-2 border-[#8B6D38]/50" />
-          <div className="absolute bottom-4 left-4 w-12 h-12 border-b-2 border-l-2 border-[#8B6D38]/50" />
-          <div className="absolute bottom-4 right-4 w-12 h-12 border-b-2 border-r-2 border-[#8B6D38]/50" />
-
-          {/* Content */}
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-center gap-2 md:gap-3 px-6">
-            <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#8B6D38]/80 to-transparent" />
-            <h2 className="font-serif text-3xl md:text-5xl font-bold text-white leading-tight tracking-wide drop-shadow-lg">
-              We Are Here To Help You
-            </h2>
-            <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#8B6D38]/80 to-transparent" />
-            <p className="font-sans text-base md:text-xl font-medium text-yellow-100/90 uppercase tracking-widest">
-              Speak to Kurja Law Today.
-            </p>
-            <div className="py-3">
-              <Button name={"Book Your Schedule"} />
-            </div>
-          </div>
-        </div>
       </div>
       <Footer />
     </section>
