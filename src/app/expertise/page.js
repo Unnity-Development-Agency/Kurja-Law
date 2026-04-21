@@ -38,10 +38,7 @@ const page = () => {
       {/* Hero Banner */}
       <div className="max-w-full w-full pb-10 md:pb-16">
         <div className="relative max-w-full w-full h-54">
-          <img
-            src="./expertise-thick.png"
-            className="w-full h-full object-cover"
-          />
+          <img src="./final.png" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-[#2c1f0e8b] flex items-center justify-center">
             <div className="absolute top-4 left-4 w-8 h-8 border-t-2 border-l-2 border-[#8B6D38]/50" />
             <div className="absolute top-4 right-4 w-8 h-8 border-t-2 border-r-2 border-[#8B6D38]/50" />
@@ -74,7 +71,6 @@ const page = () => {
             key={item.id}
             href={`/expertise/${item.slug}`}
             className={`
-              ${i >= 12 ? "col-span-2" : ""}
               group relative overflow-hidden
               bg-[#f9f6f2] border border-[#525E75]/20 rounded-xl cursor-pointer
               flex flex-col items-center justify-start gap-3 px-5 py-7
