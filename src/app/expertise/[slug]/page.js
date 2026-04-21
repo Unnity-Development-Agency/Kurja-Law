@@ -24,7 +24,7 @@ const page = () => {
         <div className="max-w-full w-full pb-10 md:pb-16">
           <div className="relative max-w-full w-full h-44">
             <img
-              src="/Expertise-hero.jpg"
+              src="/expertise-thick.png"
               className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-[#2c1f0e8b] flex items-center justify-center">
